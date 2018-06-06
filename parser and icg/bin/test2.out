@@ -1,0 +1,62 @@
+program :
+    0: 	['var1', [1, 2, 3, 9, 7, 3], 'ARRAY', '=']
+    1: 	['var2', 'var1', 'ARRAY', '=']
+    2: 	['var4', 0, '', '=']
+    3: 	['var5', 'var2', 'ARRAY', '=']
+    4: 	['var6', 4, '', '=']
+    5: 	['var7', 'var4', 'var6', '==']
+    6: 	['var7', 1, 16, 'COND_GOTO']
+    7: 	['var8', 'var4', 4, '*']
+    8: 	['var9', 100, 'var8', '+']
+    9: 	['var3', 'var9', '', 'LW']
+   10: 	['var10', 'var3', 'var3', '*']
+   11: 	['var11', 3, 2, '/']
+   12: 	['var12', 'var10', 'var11', '+']
+   13: 	['var13', 'var12', '', '=']
+   14: 	['var4', 'var4', 1, '+']
+   15: 	['', '', 5, 'GOTO']
+   16: 	['var14', [1, 3, 6, 7], 'ARRAY', '=']
+   17: 	['var16', 0, '', '=']
+   18: 	['var17', [1, 3, 6, 7], 'ARRAY', '=']
+   19: 	['var18', 4, '', '=']
+   20: 	['var19', 'var16', 'var18', '==']
+   21: 	['var19', 1, 30, 'COND_GOTO']
+   22: 	['var20', 'var16', 4, '*']
+   23: 	['var21', 100, 'var20', '+']
+   24: 	['var15', 'var21', '', 'LW']
+   25: 	['var22', 'var15', 'var15', '*']
+   26: 	['var22', '', 'NUMBER', 'PRINT']
+   27: 	['"\n"', '', 'STRING', 'PRINT']
+   28: 	['var16', 'var16', 1, '+']
+   29: 	['', '', 20, 'GOTO']
+   30: 	['', '', -1, 'HALT']
+
+
+ SYMBOL TABLE
+--------------
+
+SCOPE: program
+-----------------------
+{'False': {'offset': 1, 'program': 0, 'type': 'BOOLEAN', 'width': 1},
+ 'True': {'offset': 0, 'program': 1, 'type': 'BOOLEAN', 'width': 1},
+ 'a': {'offset': 6, 'program': 'var2', 'type': 'NUMBER', 'width': 4},
+ 'c': {'offset': 14, 'program': 'var13', 'type': 'NUMBER', 'width': 4},
+ 'i': {'offset': 10, 'program': 'var3', 'type': 'NUMBER', 'width': 4},
+ 'numParam': 0,
+ 'returnType': 'UNDEFINED',
+ 'scopeName': 'program',
+ 'type': 'FUNCTION',
+ 'var': {'offset': 22, 'program': 'var15', 'type': 'NUMBER', 'width': 4},
+ 'var1': {'isArray': 'True',
+          'offset': 2,
+          'place': [1, 2, 3, 9, 7, 3],
+          'type': 'NUMBER',
+          'width': 4},
+ 'var14': {'isArray': 'True',
+           'offset': 18,
+           'place': [1, 3, 6, 7],
+           'type': 'NUMBER',
+           'width': 4},
+ 'width': 26}
+-----------------------
+

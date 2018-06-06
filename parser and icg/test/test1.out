@@ -1,0 +1,38 @@
+program :
+    0: 	['var1', 5, '', '=']					✓ var2 is index
+    1: 	['var2', 0, '', '=']					✓
+    2: 	['var3', [1, 2, 3], 'ARRAY', '=']		✓
+    3: 	['var4', 3, '', '=']					✓ Len
+    4: 	['var5', 'var2', 3, '==']				✓ Contidition
+    5: 	['var5', 1, 34, 'COND_GOTO']			✓ Jump to outside for loop
+    6: 	['var1', 'var3[var2]', '', '=']			✓ set var 1
+    7: 	['var6', 5, '', '=']					✓
+    8: 	['var7', 'var6', 10, '<']				✓
+    9: 	['var7', 0, 27, 'COND_GOTO']			✓
+   10: 	['var8', 'var6', 8, '==']				✓
+   11: 	['var8', 0, 15, 'COND_GOTO']			✓
+   12: 	['var6', '', 'NUMBER', 'PRINT']			✓
+   13: 	['"\n"', '', 'STRING', 'PRINT']			✓
+   14: 	['', '', 24, 'GOTO']					✓
+   15: 	['var9', 'var6', 5, '>']				✓
+   16: 	['var9', 0, 22, 'COND_GOTO']			✓
+   17: 	['var10', 'var6', 'var1', '*']			✓
+   18: 	['var10', '', 'NUMBER', 'PRINT']		✓
+   19: 	['"\n"', '', 'STRING', 'PRINT']			✓
+   20: 	['', '', 27, 'GOTO']					✓
+   21: 	['', '', 24, 'GOTO']					✓
+   22: 	['"HI"', '', 'STRING', 'PRINT']			✓
+   23: 	['"\n"', '', 'STRING', 'PRINT']			✓
+   24: 	['var11', 'var6', 'var1', '+']			✓
+   25: 	['var6', 'var11', '', '=']				✓
+   26: 	['', '', 8, 'GOTO']						✓
+   27: 	['var12', 'var1', 2, '==']				✓
+   28: 	['var12', 0, 31, 'COND_GOTO']			✓
+   29: 	['', '', -1, 'GOTO']					X
+   30: 	['', '', 32, 'GOTO']					✓
+   31: 	['var1', 3, '', '=']					✓
+   32: 	['var2', 'var2', 1, '+']				✓
+   33: 	['', '', 4, 'GOTO']						✓
+   34: 	['"hello"', '', 'STRING', 'PRINT']		✓
+   35: 	['"\n"', '', 'STRING', 'PRINT']			✓
+   36: 	['', '', -1, 'HALT']					✓

@@ -1,0 +1,59 @@
+fun :
+    0: 	['var4', 20, '', '=']
+    1: 	['var4', '', 'NUMBER', 'PRINT']
+    2: 	['"\n"', '', 'STRING', 'PRINT']
+    3: 	['', '', '', 'JUMP_RETURN']
+program :
+    0: 	['var1', 10, '', '=']
+    1: 	['var2', 'var1', 10, '<']
+    2: 	['var2', 0, 5, 'COND_GOTO']
+    3: 	['var1', '', 'NUMBER', 'PRINT']
+    4: 	['"\n"', '', 'STRING', 'PRINT']
+    5: 	['var5', 34, 2, '+']
+    6: 	['var6', 'var5', '', '=']
+    7: 	['var6', '', 'NUMBER', 'PRINT']
+    8: 	['"\n"', '', 'STRING', 'PRINT']
+    9: 	['', '', -1, 'HALT']
+
+
+ SYMBOL TABLE
+--------------
+
+SCOPE: fun
+-----------------------
+{'numParam': 0,
+ 'parentName': 'program',
+ 'returnType': 'UNDEFINED',
+ 'scopeName': 'fun',
+ 'type': 'FUNCTION',
+ 'width': 0}
+-----------------------
+
+
+SCOPE: program
+-----------------------
+{'False': {'fun': 0,
+           'offset': 11,
+           'program': 0,
+           'type': 'BOOLEAN',
+           'width': 1},
+ 'True': {'fun': 1, 'offset': 10, 'program': 1, 'type': 'BOOLEAN', 'width': 1},
+ 'fun': {'numParam': 0,
+         'parentName': 'program',
+         'returnType': 'UNDEFINED',
+         'scopeName': 'fun',
+         'type': 'FUNCTION',
+         'width': 0},
+ 'i': {'fun': 'var4',
+       'offset': 2,
+       'program': 'var1',
+       'type': 'NUMBER',
+       'width': 4},
+ 'j': {'offset': 12, 'program': 'var6', 'type': 'NUMBER', 'width': 4},
+ 'numParam': 0,
+ 'returnType': 'UNDEFINED',
+ 'scopeName': 'program',
+ 'type': 'FUNCTION',
+ 'width': 16}
+-----------------------
+

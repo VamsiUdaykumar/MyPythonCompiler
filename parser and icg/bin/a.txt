@@ -1,0 +1,50 @@
+fun :
+    0: 	['var4', 10, '', '=']
+    1: 	['', '', '', 'JUMP_RETURN']
+program :
+    0: 	['var1', 8, '', '=']
+    1: 	['var2', 10, '', '=']
+    2: 	['"hi HEllo"', '', 'STRING', 'PRINT']
+    3: 	['"\n"', '', 'STRING', 'PRINT']
+    4: 	['', '', -1, 'HALT']
+
+
+ SYMBOL TABLE
+--------------
+
+SCOPE: fun
+-----------------------
+{'j': {'fun': 'var4', 'offset': 0, 'type': 'NUMBER', 'width': 4},
+ 'numParam': 0,
+ 'parentName': 'program',
+ 'returnType': 'UNDEFINED',
+ 'scopeName': 'fun',
+ 'type': 'FUNCTION',
+ 'width': 4}
+-----------------------
+
+
+SCOPE: program
+-----------------------
+{'False': {'fun': 0,
+           'offset': 15,
+           'program': 0,
+           'type': 'BOOLEAN',
+           'width': 1},
+ 'True': {'fun': 1, 'offset': 14, 'program': 1, 'type': 'BOOLEAN', 'width': 1},
+ 'a': {'offset': 2, 'program': 'var1', 'type': 'NUMBER', 'width': 4},
+ 'fun': {'j': {'fun': 'var4', 'offset': 0, 'type': 'NUMBER', 'width': 4},
+         'numParam': 0,
+         'parentName': 'program',
+         'returnType': 'UNDEFINED',
+         'scopeName': 'fun',
+         'type': 'FUNCTION',
+         'width': 4},
+ 'i': {'offset': 6, 'program': 'var2', 'type': 'NUMBER', 'width': 4},
+ 'numParam': 0,
+ 'returnType': 'UNDEFINED',
+ 'scopeName': 'program',
+ 'type': 'FUNCTION',
+ 'width': 16}
+-----------------------
+

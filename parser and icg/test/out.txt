@@ -1,0 +1,2 @@
+extra.py:1: unused variable 'v' (60% confidence)
+extra.py:2: unused variable 'z' (60% confidence)
