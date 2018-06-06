@@ -1,0 +1,24 @@
+i = 0
+L1 :
+t0 = i < 7
+ifFalse t0 goto L4
+goto L2
+L3 : 
+t1 = i + 1
+i = t1
+goto L1
+L2 :
+t2 = 9 * 4
+t3 = t2 * 1
+t4 = t3 * 4
+t5 = x > 5
+ifFalse t5 goto L5
+t6 = 32
+goto L6
+L5 :
+t7 = 123 * 3
+t6 = t7
+goto L6
+L6 :
+goto L3
+L4: 
