@@ -1,6 +1,6 @@
 # MyPythonCompiler
 
-As a part of my Compiler Design Project, I have created a python complier from scratch using the same Grammar Rules for Python.This Compiler is designed only for python code structures with loops and uses PLY tools and is written in Python itself. 
+As a part of my Compiler Design Project, I have created a python complier from scratch using the same Grammar Rules for Python. This Compiler is designed only for python code structures with loops and uses PLY tools and is written in Python itself. 
 
 There are 4 stages of this project
 1) THE LEXER (inclusive of ignoring singluar and multiple comments)
